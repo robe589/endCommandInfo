@@ -13,7 +13,7 @@ def main()
 	sendAddress=$sendAddress
 	command=ARGV[0]
 
-	if command == nil
+	if command == nil or command ==''
 		puts '実行するコマンドをコマンドライン引数に入力してください'
 		return -1
 	end
