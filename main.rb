@@ -31,8 +31,8 @@ def main()
 	result=$?.to_s
 	puts 'result='+result
 
-	subject='コマンド実行結果'
-	body='実行結果は'+result+"\n\n実行出力は\n"
+	subject=command+'のコマンド実行結果'
+	body="実行コマンド:"+command+'\n実行結果は'+result+"\n\n実行出力は\n"
 	output.each do  |str|
 		body+=str
 	end
